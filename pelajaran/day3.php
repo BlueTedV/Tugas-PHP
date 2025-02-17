@@ -32,11 +32,17 @@ elseif ($jam > "04:00:00" && $jam <= "10:00:00") {
 elseif ($jam > "10:00:00" && $jam < "15:00:00") {
     echo "$jam = siang";
 }
-elseif ($jam >= "15:00:00" && $jam < "18:00:00") {
+elseif ($jam >= "15:00:00" && $jam < "17:300:00") {
     echo "$jam = sore";
 }
+elseif ($jam >= "17:30:00" && $jam <= "18:30:00") {
+    echo "$jam = petang";
+}
+elseif ($jam > "18:30:00" && $jam <= "24:00:00") {
+    echo "$jam = malam"
+}
 else {
-    echo "$jam = malam";
+    echo "$jam = invalid!!";
 }
 ?>
 
